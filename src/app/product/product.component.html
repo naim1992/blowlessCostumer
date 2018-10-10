@@ -1,0 +1,33 @@
+<form>
+
+  <p>
+  <label> product Name : </label>
+  <input type="text" name="productName" [(ngModel)]="model.productName" #productName="ngModel"/>
+  </p>
+  
+
+  <p>
+    <label> Description : </label>
+    <input type="text" name="productDescription" [(ngModel)]="model.productDescription" #productDescription="ngModel"/>
+  </p>
+
+    <p>
+      <label> Price : </label>
+      <input type="text" name="productPrice" [(ngModel)]="model.productPrice" #productPrice="ngModel"/>
+      </p>
+
+      <p>
+        <label> Picture : </label>
+        <input type="image" name="productPicture" [(ngModel)]="model.productPicture" #productPicture="ngModel"/>
+      </p>
+
+      <p>
+        <label> Status : </label>
+        <input type="text" name="ProductStatus" [(ngModel)]="model.ProductStatus" #ProductStatus="ngModel"/>
+      </p>
+
+      <p>
+        <input type="submit" value="add product" (submit)="onAdd()" />
+      </p>
+
+</form>
